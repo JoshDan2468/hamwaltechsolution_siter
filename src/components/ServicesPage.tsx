@@ -341,7 +341,7 @@ export function ServicesPage() {
               className='relative h-125 rounded-xl overflow-hidden shadow-xl'
             >
               <img
-                src='/oil.jpg'
+                src='/energy.jpg'
                 alt='Gas infrastructure'
                 className='w-full h-full object-cover'
               />
