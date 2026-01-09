@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Mail, MessageCircle } from "lucide-react";
 import logo from "/nav_icon.png";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export function Footer() {
   return (
@@ -95,15 +96,47 @@ export function Footer() {
                 <MapPin className='w-4 h-4 mt-1 shrink-0' />
                 <span>
                   Head Office: No 34 Adegoke Street, Via Alh Masha Road,
-                  Surulere, Lagos, Nigeria. <br />                 
+                  Surulere, Lagos, Nigeria. <br />
                 </span>
               </div>
-              <div className='flex items-start gap-2 ml-5'>
+              <div className='flex items-start gap-2 ml-6'>
                 <span>
                   Operational Office: 25,Sheremekun Street, Via Mushin Olosha
-                  bustop, Mushin,Lagos, Nigeria. <br />                
+                  bustop, Mushin,Lagos, Nigeria. <br />
                 </span>
               </div>
+            </div>
+          </div>
+          {/* Social Media */}
+          <div className='mt-6'>
+            <p className='text-white mb-3 font-roboto text-sm'>Follow Us</p>
+
+            <div className='space-y-3'>
+              {/* Facebook */}
+              <a
+                href='https://www.facebook.com/hamwaltechsolution'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
+              >
+                <span className='w-8 h-8 flex items-center justify-center rounded-full bg-white text-blue-900'>
+                  <FaFacebookF size={14} />
+                </span>
+                <span className='text-sm font-roboto'>Facebook</span>
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href='https://www.linkedin.com/company/hamwal-tech-solution'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
+              >
+                <span className='w-8 h-8 flex items-center justify-center rounded-full bg-white text-blue-900'>
+                  <FaLinkedinIn size={14} />
+                </span>
+                <span className='text-sm font-roboto'>LinkedIn</span>
+              </a>
             </div>
           </div>
 
