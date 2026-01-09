@@ -41,33 +41,70 @@ export function NewsletterSignup() {
           </div>
         </motion.div>
       ) : (
-        <form onSubmit={handleSubmit} className='relative'>
+        <form onSubmit={handleSubmit} className='relative w-full'>
           <div className='relative'>
-            <Mail className='absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400' />
+            {/* Icon */}
+            <Mail
+              className='
+      absolute
+      left-3
+      top-1/2
+      -translate-y-1/2
+      w-4 h-4
+      sm:w-5 sm:h-5
+      text-gray-400
+    '
+            />
+
+            {/* Input */}
             <input
               type='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder='Enter your email address'
+              placeholder='Enter your email'
               required
-              className='w-full pl-12 pr-32 py-4 rounded-lg border border-gray-300 focus:border-green-600 focus:ring-2 focus:ring-green-600 focus:ring-opacity-20 outline-none transition-all'
-              style={{
-                fontSize: "1rem",
-                lineHeight: "1.4",
-                fontFamily: "Poppins, sans-serif",
-                fontWeight: "500",
-              }}
+              className='
+        w-full
+        pl-10
+        pr-28
+        py-3
+        sm:pl-12
+        sm:pr-32
+        sm:py-4
+        text-sm
+        sm:text-base
+        rounded-lg
+        border border-gray-300
+        focus:border-green-600
+        focus:ring-2 focus:ring-green-600/20
+        outline-none
+        transition-all
+        font-poppins
+      '
             />
+
+            {/* Button */}
             <button
               type='submit'
               disabled={loading}
-              className='absolute right-2 top-1/2 -translate-y-1/2 bg-linear-to-r from-blue-900 to-green-600 text-white px-6 py-2 rounded-md hover:shadow-lg transition-shadow disabled:opacity-50 flex items-center gap-2'
-              style={{
-                fontSize: "1rem",
-                lineHeight: "1.4",
-                fontFamily: "Poppins, sans-serif",
-                fontWeight: "500",
-              }}
+              className='
+        absolute
+        right-1.5
+        top-1/2
+        -translate-y-1/2
+        px-4 py-1.5
+        sm:px-6 sm:py-2
+        text-sm
+        sm:text-base
+        bg-linear-to-r from-blue-900 to-green-600
+        text-white
+        rounded-md
+        hover:shadow-lg
+        transition-shadow
+        disabled:opacity-50
+        flex items-center gap-1.5
+        font-poppins
+      '
             >
               {loading ? (
                 "Subscribing..."
@@ -79,14 +116,17 @@ export function NewsletterSignup() {
               )}
             </button>
           </div>
+
+          {/* Helper text */}
           <p
-            className='text-sm text-gray-500 mt-3 text-center'
-            style={{
-              fontSize: "1rem",
-              lineHeight: "1.4",
-              fontFamily: "Poppins, sans-serif",
-              fontWeight: "500",
-            }}
+            className='
+      mt-3
+      text-xs
+      sm:text-sm
+      text-gray-500
+      text-center
+      font-poppins
+    '
           >
             We respect your privacy. Unsubscribe at any time.
           </p>
