@@ -94,10 +94,14 @@ export function Footer() {
               <div className='flex items-start gap-2'>
                 <MapPin className='w-4 h-4 mt-1 shrink-0' />
                 <span>
-                  Head Office: 25,Sheremekun Street, Via Mushin Olosha bustop,
-                  Mushin,Lagos, Nigeria. <br />
-                  No 34 Adegoke Street, Via Alh Masha Road, Surulere, Lagos,
-                  Nigeria
+                  Head Office: No 34 Adegoke Street, Via Alh Masha Road,
+                  Surulere, Lagos, Nigeria. <br />                 
+                </span>
+              </div>
+              <div className='flex items-start gap-2 ml-5'>
+                <span>
+                  Operational Office: 25,Sheremekun Street, Via Mushin Olosha
+                  bustop, Mushin,Lagos, Nigeria. <br />                
                 </span>
               </div>
             </div>

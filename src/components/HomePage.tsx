@@ -526,8 +526,8 @@ export function HomePage() {
       </section> */}
 
       {/* Newsletter Signup Section */}
-      <section className='py-20 bg-gray-100'>
-        <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+      <section className='py-12 sm:py-16 lg:py-20 bg-gray-100'>
+        <div className='max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -535,29 +535,39 @@ export function HomePage() {
             transition={{ duration: 0.6 }}
           >
             <h2
-              className='mb-6'
-              style={{
-                fontSize: "1rem",
-                lineHeight: "1.5",
-                fontFamily: "Poppins, sans-serif",
-                fontWeight: "500",
-              }}
+              className='
+          mb-4
+          text-base
+          sm:text-lg
+          md:text-xl
+          font-poppins
+          font-medium
+        '
             >
               Stay Updated with Our Latest News
             </h2>
+
             <p
-              className='text-xl text-gray-600 mb-8 max-w-2xl mx-auto'
-              style={{
-                fontSize: "1rem",
-                lineHeight: "1.4",
-                fontFamily: "Poppins, sans-serif",
-                fontWeight: "500",
-              }}
+              className='
+          mb-6
+          text-sm
+          sm:text-base
+          md:text-lg
+          text-gray-600
+          max-w-xl
+          mx-auto
+          leading-relaxed
+          font-poppins
+          font-medium
+        '
             >
               Subscribe to our newsletter to receive the latest updates on our
               services, projects, and industry insights.
             </p>
-            <NewsletterSignup />
+
+            <div className='max-w-md mx-auto'>
+              <NewsletterSignup />
+            </div>
           </motion.div>
         </div>
       </section>
