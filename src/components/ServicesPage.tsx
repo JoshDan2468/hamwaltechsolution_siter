@@ -88,7 +88,7 @@ const services = [
     ],
   },
   {
-    image: "./pipeline.jpg",
+    image: "./trade.jpg",
     title: "General Trading & Supply Chain Solutions",
     description:
       "Efficient trading and supply chain management for industrial operations.",
