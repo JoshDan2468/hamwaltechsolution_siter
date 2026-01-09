@@ -94,7 +94,9 @@ export function AboutPage() {
               key={image}
               src={image}
               alt='Industrial background'
-              className='absolute w-full h-full object-cover'
+              className='absolute w-full h-full object-cover lg:object-contain
+        object-center
+        bg-black'
               initial={{ opacity: 0 }}
               animate={{ opacity: index === currentIndex ? 1 : 0 }}
               transition={{ duration: 1.2 }}
