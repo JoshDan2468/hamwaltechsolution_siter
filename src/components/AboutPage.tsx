@@ -7,14 +7,14 @@ import { useEffect, useState } from "react";
 // import { image } from "framer-motion/client";
 
 const heroImages = [
-  "/hero1.jpg",
-  "/hero2.jpg",
-  "/hero3.jpg",
-  "/hero4.jpg",
-  "/hero5.jpg",
-  "/hero6.jpg",
+  "/test/hero1.jpg",
+  "/test/hero2.jpg",
+  "/test/hero3.jpg",
+  "/test/hero4.jpg",
+  "/test/hero5.jpg",
+  "/test/hero6.jpg",
   "/factory2.jpg",
-  "/hero7.jpg",
+  "/test/hero7.jpg",
 ];
 const products = [
   {
@@ -87,16 +87,14 @@ export function AboutPage() {
   return (
     <div className='pt-20'>
       {/* Hero Section */}
-      <section className='relative min-h-120 sm:min-h-130 flex items-center justify-center overflow-hidden '>
+      <section className='relative min-h-120 sm:min-h-138 flex items-center justify-center overflow-hidden '>
         <div className='absolute inset-0 z-0 overflow-hidden'>
           {heroImages.map((image, index) => (
             <motion.img
               key={image}
               src={image}
               alt='Industrial background'
-              className='absolute w-full h-full object-cover lg:object-contain
-        object-center
-        bg-black'
+              className='absolute  w-full h-full bg-center bg-no-repeat bg-cover bg-black '
               initial={{ opacity: 0 }}
               animate={{ opacity: index === currentIndex ? 1 : 0 }}
               transition={{ duration: 1.2 }}

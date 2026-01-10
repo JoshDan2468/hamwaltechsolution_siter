@@ -226,7 +226,7 @@ export function HomePage() {
               </h2>
               <p className='text-gray-600 mb-4'>
                 HAMWAL TECH SOLUTION LIMITED is a multi-sectoral solutions
-                company established in 2024 to support the evolving needs of the
+                company established in 2013 to support the evolving needs of the
                 energy, engineering, industrial, and digital economy.
               </p>
               <p className='text-gray-600 mb-4'>

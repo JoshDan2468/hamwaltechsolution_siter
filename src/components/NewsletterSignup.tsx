@@ -1,27 +1,27 @@
 import { useState } from "react";
 import { Mail, CheckCircle, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { supabase } from "../lib/supabase";
 
 export function NewsletterSignup() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      setSubscribed(true);
-      setLoading(false);
-      setEmail("");
+    const { error } = await supabase.from("subscribers").insert([{ email }]);
 
-      // Reset after 5 seconds
-      setTimeout(() => {
-        setSubscribed(false);
-      }, 5000);
-    }, 1000);
+    if (error) {
+      alert("You are already subscribed");
+    } else {
+      setSubscribed(true);
+      setEmail("");
+    }
+
+    setLoading(false);
   };
 
   return (
