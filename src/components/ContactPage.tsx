@@ -45,7 +45,7 @@ export function ContactPage() {
       <section className='relative min-h-125 flex items-center justify-center overflow-hidden'>
         <div className='absolute inset-0 z-0'>
           <img
-            src='/Contact.jpg'
+            src='/beep_us.jpg'
             alt='Industrial plant'
             className='w-full h-full object-cover  md:opacity-100'
           />
@@ -73,7 +73,7 @@ export function ContactPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className='text-3xl text-green-100 max-w-3xl mx-auto'
+            className='text-2xl text-green-100 max-w-3xl mx-auto'
           >
             Ready to start your project?
             <br /> Contact us today for a free consultation
@@ -164,16 +164,16 @@ export function ContactPage() {
                       <MapPin className='w-6 h-6 text-white' />
                     </div>
                     <div>
-                      <h3 className='mb-1'>Operational Address</h3>
-                      <p className='text-gray-600'>
-                        25,Sheremekun Street, Via Mushin Olosha bustop,
-                        Mushin,Lagos, Nigeria
-                        <br />
-                      </p>
                       <h3 className='mb-1'>Head Office Address</h3>
                       <p className='text-gray-600'>
                         No 34 Adegoke Street, Via Alh Masha Road, Surulere,
                         Lagos, Nigeria.
+                        <br />
+                      </p>
+                      <h3 className='mb-1'>Operational Address</h3>
+                      <p className='text-gray-600'>
+                        25,Sheremekun Street, Via Mushin Olosha bustop,
+                        Mushin,Lagos, Nigeria
                         <br />
                       </p>
                     </div>
@@ -357,8 +357,7 @@ export function ContactPage() {
           >
             <h2 className='mb-4'>Our Service Area</h2>
             <p className='text-xl text-gray-600 max-w-2xl mx-auto'>
-              Proudly serving clients across Lagos, Nigeria, and international
-              markets
+              Proudly serving clients across Nigeria, and international markets
             </p>
           </motion.div>
 
