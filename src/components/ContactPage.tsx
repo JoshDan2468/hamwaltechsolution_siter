@@ -73,10 +73,10 @@ export function ContactPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className='text-xl text-green-100 max-w-3xl mx-auto'
+            className='text-3xl text-green-100 max-w-3xl mx-auto'
           >
-            Ready to start your project? Contact us today for a free
-            consultation
+            Ready to start your project?
+            <br /> Contact us today for a free consultation
           </motion.p>
         </div>
       </section>
@@ -164,10 +164,16 @@ export function ContactPage() {
                       <MapPin className='w-6 h-6 text-white' />
                     </div>
                     <div>
-                      <h3 className='mb-1'>Office Address</h3>
+                      <h3 className='mb-1'>Operational Address</h3>
                       <p className='text-gray-600'>
                         25,Sheremekun Street, Via Mushin Olosha bustop,
                         Mushin,Lagos, Nigeria
+                        <br />
+                      </p>
+                      <h3 className='mb-1'>Head Office Address</h3>
+                      <p className='text-gray-600'>
+                        25,Sheremekun Street, Via Mushin Olosha bustop,
+                        Mushin,Lagos, Nigeria.
                         <br />
                       </p>
                     </div>
@@ -180,16 +186,16 @@ export function ContactPage() {
                   <div className='space-y-2 text-gray-600'>
                     <div className='flex justify-between'>
                       <span>Monday - Friday:</span>
-                      <span>8:00 AM - 6:00 PM</span>
+                      <span>8:00 AM - 5:00 PM</span>
                     </div>
-                    <div className='flex justify-between'>
+                    {/* <div className='flex justify-between'>
                       <span>Saturday:</span>
                       <span>9:00 AM - 6:00 PM</span>
-                    </div>
-                    <div className='flex justify-between'>
+                    </div> */}
+                    {/* <div className='flex justify-between'>
                       <span>Sunday:</span>
                       <span>Closed</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </motion.div>
