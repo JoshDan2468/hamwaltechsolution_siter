@@ -98,7 +98,18 @@ export function CSRPage() {
   return (
     <div className='pt-20'>
       {/* Hero Section */}
-      <section className='relative min-h-125 flex items-center justify-center  overflow-hidden bg-linear-to-r from-green-700 to-blue-900'>
+      <section className='relative min-h-125 flex items-center justify-center  overflow-hidden '>
+        <div className='absolute inset-0 z-0'>
+          <img
+            src='/csr.jpg'
+            alt='Industrial plant'
+            className='w-full h-full object-cover  md:opacity-100'
+          />
+          <div
+            className={`absolute w-full inset-0 bg-linear-to-r from-blue-900/50 to-green-700/50`}
+          />
+        </div>
+
         <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-20'>
           <motion.h1
             initial={{ opacity: 0, y: 50, rotateX: 20 }}
