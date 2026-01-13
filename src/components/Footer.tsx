@@ -29,11 +29,7 @@ export function Footer() {
               />
               <div>
                 <div
-                  className='text-blue-900 uppercase  tracking-tight
-    text-[12px]
-    md:text-sm
-    lg:text-md
-    leading-none
+                  className='text-blue-900 uppercase  tracking-tight text-[12px] md:text-sm lg:text-md leading-none
     font-roboto font-black'
                   style={{
                     lineHeight: "1",
@@ -59,7 +55,7 @@ export function Footer() {
                     fontWeight: "900",
                   }}
                 >
-                  Your Satisfaction Our Priority
+                  Your Satisfaction Is Our Priority
                 </div>
               </div>
             </div>
@@ -101,7 +97,7 @@ export function Footer() {
               </div>
               <div className='flex items-start gap-2 ml-6'>
                 <span>
-                  Operational Office: 25,Sheremekun Street, Via Mushin Olosha
+                  Operational Office: 25,Shoremekun Street, Via Mushin Olosha
                   bustop, Mushin,Lagos, Nigeria. <br />
                 </span>
               </div>

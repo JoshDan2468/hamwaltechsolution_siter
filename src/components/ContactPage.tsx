@@ -172,7 +172,7 @@ export function ContactPage() {
                       </p>
                       <h3 className='mb-1'>Operational Address</h3>
                       <p className='text-gray-600'>
-                        25,Sheremekun Street, Via Mushin Olosha bustop,
+                        25,Shoremekun Street, Via Mushin Olosha bustop,
                         Mushin,Lagos, Nigeria
                         <br />
                       </p>
