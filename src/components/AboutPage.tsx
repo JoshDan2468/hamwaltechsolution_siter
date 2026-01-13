@@ -155,29 +155,26 @@ export function AboutPage() {
               >
                 Our Story
               </h2>
-              <p className='text-gray-600 mb-4 font-roboto'>
-                HAMWAL TECH SOLUTION LIMITED was established in 2013 as a
-                multi-sectoral solutions company to support the evolving needs
-                of the energy, engineering, industrial, and digital economy.
-              </p>
-              <p className='text-gray-600 mb-4'>
-                We recognized the growing demand for integrated,
-                technology-driven solutions that combine technical expertise
-                with strategic partnerships to deliver compliant, safe, and
-                scalable results.
-              </p>
-              <p className='text-gray-600 mb-4'>
-                Today, we serve clients across Nigeria and international
-                markets, providing comprehensive solutions in asset integrity,
-                oil & gas support, energy infrastructure, engineering &
-                construction, digital technology, and business advisory
-                services.
-              </p>
-              <p className='text-gray-600'>
-                Our mission is clear: deliver reliable, innovative, and
-                sustainable solutions that drive industrial growth, operational
-                efficiency, and long-term value creation for our clients.
-              </p>
+              <div className='text-justify'>
+                <p className='text-gray-600 mb-4 font-roboto'>
+                  HAMWAL TECH SOLUTION LIMITED was established in 2013 as a
+                  multi-sectoral solutions company to support the evolving needs
+                  of the energy, engineering, industrial, and digital economy.
+                  We recognized the growing demand for integrated,
+                  technology-driven solutions that combine technical expertise
+                  with strategic partnerships to deliver compliant, safe, and
+                  scalable results. <br />
+                  Today, we serve clients across Nigeria and international
+                  markets, providing comprehensive solutions in asset integrity,
+                  oil & gas support, energy infrastructure, engineering &
+                  construction, digital technology, and business advisory
+                  services. <br />
+                  Our mission is clear: deliver reliable, innovative, and
+                  sustainable solutions that drive industrial growth,
+                  operational efficiency, and long-term value creation for our
+                  clients.
+                </p>
+              </div>
             </motion.div>
 
             <motion.div
@@ -231,7 +228,7 @@ export function AboutPage() {
               >
                 Our Mission
               </h2>
-              <p className='text-gray-600'>
+              <p className='text-gray-600 text-justify'>
                 To deliver reliable, innovative, and sustainable engineering,
                 energy, and digital solutions that drive industrial growth,
                 operational efficiency, and long-term value creation for our
@@ -265,7 +262,7 @@ export function AboutPage() {
               >
                 Our Vision
               </h2>
-              <p className='text-gray-600'>
+              <p className='text-gray-600 text-justify'>
                 To become a trusted African and global solutions partner in
                 energy, engineering, and digital transformation, recognized for
                 excellence, innovation, and sustainable impact across all

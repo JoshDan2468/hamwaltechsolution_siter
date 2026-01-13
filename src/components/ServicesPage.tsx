@@ -26,6 +26,7 @@ const services = [
       "Civil engineering works",
       "Mechanical & electrical services",
       "Project management and maintenance",
+      "Subsea and Pipeline Engineering",
     ],
   },
   {
@@ -73,6 +74,7 @@ const services = [
       "Utilities and public sector projects",
       "Industrial infrastructure development",
       "Facility management",
+      "Onshore pipeline and offshore pipeline construction management",
     ],
   },
   {

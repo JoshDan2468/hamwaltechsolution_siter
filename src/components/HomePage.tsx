@@ -53,6 +53,7 @@ const partners = [
   { name: "doveheights", image: "./partners/dovaheights.png" },
   { name: "gexperts", image: "./partners/gexperts.png" },
   { name: "russel", image: "./partners/russel.png" },
+  { name: "oau", image: "./partners/oau.png" },
 ];
 
 const clients = [
@@ -189,7 +190,7 @@ export function HomePage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className='flex items-center justify-center'
               >
-                <div className='w-25 h-20 '>
+                <div className='w-30 h-30 md:w-40 md:h-40 lg:w-50 lg:h-50 flex items-center justify-center p-4'>
                   <img
                     src={client.image}
                     alt={client.name}
@@ -224,22 +225,22 @@ export function HomePage() {
               >
                 Integrated Energy, Engineering & Digital Solutions
               </h2>
-              <p className='text-gray-600 mb-4'>
-                HAMWAL TECH SOLUTION LIMITED is a multi-sectoral solutions
-                company established in 2013 to support the evolving needs of the
-                energy, engineering, industrial, and digital economy.
-              </p>
-              <p className='text-gray-600 mb-4'>
-                We combine technical expertise, technology-driven execution, and
-                strategic partnerships to deliver compliant, safe, and scalable
-                solutions across Nigeria and international markets.
-              </p>
-              <p className='text-gray-600 mb-6'>
-                Our integrated approach helps businesses overcome energy,
-                engineering, and operational challenges by providing reliable,
-                efficient, and sustainable solutions across oil & gas, gas
-                supply, infrastructure, and digital technology.
-              </p>
+              <div className='text-justify'>
+                <p className='text-gray-600 mb-4 text-justify'>
+                  HAMWAL TECH SOLUTION LIMITED is a multi-sectoral solutions
+                  company established in 2013 to support the evolving needs of
+                  the energy, engineering, industrial, and digital economy.
+                  <br />
+                  We combine technical expertise, technology-driven execution,
+                  and strategic partnerships to deliver compliant, safe, and
+                  scalable solutions across Nigeria and international markets.{" "}
+                  <br />
+                  Our integrated approach helps businesses overcome energy,
+                  engineering, and operational challenges by providing reliable,
+                  efficient, and sustainable solutions across oil & gas, gas
+                  supply, infrastructure, and digital technology.
+                </p>
+              </div>
               <Link
                 to='/about'
                 className='inline-flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors'
@@ -407,7 +408,7 @@ export function HomePage() {
                   <img
                     src={partner.image}
                     alt={partner.name}
-                    className='h-10 md:h-12 lg:h-15 object-contain'
+                    className='h-15 md:h-15 lg:h-20 object-contain'
                   />
                 </div>
               ))}
