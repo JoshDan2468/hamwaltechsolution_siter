@@ -18,7 +18,7 @@ export function Footer() {
           </div>
         </div> */}
 
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-5 gap-8'>
           {/* Company Info */}
           <div className='col-span-1 md:col-span-2'>
             <div className='inline-flex items-center gap-2 mb-4 bg-white p-2 py-1 rounded'>
