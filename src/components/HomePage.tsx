@@ -227,9 +227,9 @@ export function HomePage() {
               </h2>
               <div className='text-justify'>
                 <p className='text-gray-600 mb-4 text-justify'>
-                  HAMWAL TECH SOLUTION LIMITED is a multi-sectoral solutions
-                  company established in 2013 to support the evolving needs of
-                  the energy, engineering, industrial, and digital economy.
+                  HAMWAL TECH SOLUTION is a multi-sectoral solutions company
+                  established in 2013 to support the evolving needs of the
+                  energy, engineering, industrial, and digital economy.
                   <br />
                   We combine technical expertise, technology-driven execution,
                   and strategic partnerships to deliver compliant, safe, and
