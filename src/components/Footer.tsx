@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, MapPin, Mail, MessageCircle } from "lucide-react";
 import logo from "/nav_icon.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
 
 export function Footer() {
   return (
@@ -132,6 +133,18 @@ export function Footer() {
                   <FaLinkedinIn size={14} />
                 </span>
                 <span className='text-sm font-roboto'>LinkedIn</span>
+              </a>
+              {/* Twitter */}
+              <a
+                href='https://twitter.com/hamwaltechsolution'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
+              >
+                <span className='w-8 h-8 flex items-center justify-center rounded-full bg-white text-blue-900'>
+                  <FaX size={14} />
+                </span>
+                <span className='text-sm font-roboto'> X </span>
               </a>
             </div>
           </div>
