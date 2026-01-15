@@ -111,7 +111,7 @@ export function Footer() {
             <div className='space-y-3'>
               {/* Facebook */}
               <a
-                href='https://www.facebook.com/hamwaltechsolution'
+                href='https://www.facebook.com/Hamwaltechsolutions'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
@@ -124,7 +124,7 @@ export function Footer() {
 
               {/* LinkedIn */}
               <a
-                href='https://www.linkedin.com/company/hamwal-tech-solution'
+                href='https://www.linkedin.com/company/hamwal-tech-solution/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
