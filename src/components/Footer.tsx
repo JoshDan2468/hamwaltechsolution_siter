@@ -67,7 +67,7 @@ export function Footer() {
             </p>
             <div className='space-y-2 font-roboto text-sm'>
               <a
-                href='tel:+2348012345678'
+                href='tel:2348078932729'
                 className='flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-roboto'
               >
                 <Phone className='w-4 h-4' />
@@ -111,7 +111,7 @@ export function Footer() {
             <div className='space-y-3'>
               {/* Facebook */}
               <a
-                href='https://www.facebook.com/Hamwaltechsolutions'
+                href='https://www.facebook.com/Hamwaltechsolutions/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
