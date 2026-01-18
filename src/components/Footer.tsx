@@ -136,7 +136,7 @@ export function Footer() {
               </a>
               {/* Twitter */}
               <a
-                href='https://twitter.com/hamwaltechsolution'
+                href='https://x.com/hamwaltech2013?s=21'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
