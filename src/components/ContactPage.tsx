@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Phone,
   Mail,
@@ -8,6 +8,8 @@ import {
   Send,
   CheckCircle,
 } from "lucide-react";
+// import { SMTPClient } from 'emailjs';
+import emailjs from "emailjs-com";
 
 export function ContactPage() {
   const [formData, setFormData] = useState({
@@ -18,6 +20,43 @@ export function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect( () => {
+sendMyEmail();
+
+
+  }, []);
+
+  
+
+  
+
+//   const client = new SMTPClient({
+//     user: '714c18a4f0eb4c',
+//     password: '2af0a267661dd0',
+//     host: 'sandbox.smtp.mailtrap.io',
+//     ssl: true, // Use SSL for secure connection
+// });
+
+async function sendMyEmail() {
+  try {
+      const message = await emailjs.send(
+        "service_9hxr48m",
+        "template_30khyy7",
+        formData,
+         "HO-JV7axuMWHZuAtT"
+      );
+      
+      
+      console.log('Email sent successfully:', message);
+  } catch (err) {
+      console.error('Failed to send email:', err);
+  } finally {
+    console.error('Failed to send email:');
+      // client.smtp.close(); // Don't forget to close the connection!
+  }
+}
+
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
