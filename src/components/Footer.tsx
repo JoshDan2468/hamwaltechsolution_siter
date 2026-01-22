@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, MapPin, Mail, MessageCircle } from "lucide-react";
 import logo from "/nav_icon.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
 
 export function Footer() {
   return (
@@ -18,7 +19,7 @@ export function Footer() {
           </div>
         </div> */}
 
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-5 gap-8'>
           {/* Company Info */}
           <div className='col-span-1 md:col-span-2'>
             <div className='inline-flex items-center gap-2 mb-4 bg-white p-2 py-1 rounded'>
@@ -66,7 +67,7 @@ export function Footer() {
             </p>
             <div className='space-y-2 font-roboto text-sm'>
               <a
-                href='tel:+2348012345678'
+                href='tel:2348078932729'
                 className='flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-roboto'
               >
                 <Phone className='w-4 h-4' />
@@ -110,7 +111,7 @@ export function Footer() {
             <div className='space-y-3'>
               {/* Facebook */}
               <a
-                href='https://www.facebook.com/hamwaltechsolution'
+                href='https://www.facebook.com/Hamwaltechsolutions/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
@@ -123,7 +124,7 @@ export function Footer() {
 
               {/* LinkedIn */}
               <a
-                href='https://www.linkedin.com/company/hamwal-tech-solution'
+                href='https://www.linkedin.com/company/hamwal-tech-solution/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
@@ -132,6 +133,18 @@ export function Footer() {
                   <FaLinkedinIn size={14} />
                 </span>
                 <span className='text-sm font-roboto'>LinkedIn</span>
+              </a>
+              {/* Twitter */}
+              <a
+                href='https://x.com/hamwaltech2013?s=21'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex items-center gap-3 text-gray-300 hover:text-green-400 transition-colors'
+              >
+                <span className='w-8 h-8 flex items-center justify-center rounded-full bg-white text-blue-900'>
+                  <FaX size={14} />
+                </span>
+                <span className='text-sm font-roboto'> X </span>
               </a>
             </div>
           </div>

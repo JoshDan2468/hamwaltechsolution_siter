@@ -157,7 +157,7 @@ export function AboutPage() {
               </h2>
               <div className='text-justify'>
                 <p className='text-gray-600 mb-4 font-roboto'>
-                  HAMWAL TECH SOLUTION LIMITED was established in 2013 as a
+                  HAMWAL TECH SOLUTION was established in 2013 as a
                   multi-sectoral solutions company to support the evolving needs
                   of the energy, engineering, industrial, and digital economy.
                   We recognized the growing demand for integrated,
