@@ -21,14 +21,6 @@ export function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect( () => {
-sendMyEmail();
-
-
-  }, []);
-
-  
-
   
 
 //   const client = new SMTPClient({
@@ -46,6 +38,12 @@ async function sendMyEmail() {
         formData,
          "HO-JV7axuMWHZuAtT"
       );
+      console.log("Form submitted:", formData);
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({ name: "", email: "", phone: "", address: "", message: "" });
+      }, 3000);
       
       
       console.log('Email sent successfully:', message);
@@ -60,13 +58,7 @@ async function sendMyEmail() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would send data to a backend
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: "", email: "", phone: "", address: "", message: "" });
-    }, 3000);
+    sendMyEmail();
   };
 
   const handleChange = (
