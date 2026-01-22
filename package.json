@@ -14,7 +14,6 @@
     "@supabase/supabase-js": "^2.90.1",
     "@tailwindcss/cli": "^4.1.18",
     "@tailwindcss/vite": "^4.1.18",
-    "emailjs": "^5.0.0",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.24.0",
     "lucide-react": "^0.562.0",
