@@ -21,12 +21,22 @@ export function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect( () => {
-sendMyEmail();
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
 
+    // Simulate API call
+    setTimeout(() => {
+      setSubscribed(true);
+      setLoading(false);
+      setEmail("");
 
-  }, []);
-
+      // Reset after 5 seconds
+      setTimeout(() => {
+        setSubscribed(false);
+      }, 5000);
+    }, 1000);
+  };
   
 
   
@@ -58,16 +68,16 @@ async function sendMyEmail() {
 }
 
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real application, this would send data to a backend
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: "", email: "", phone: "", address: "", message: "" });
-    }, 3000);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // In a real application, this would send data to a backend
+  //   console.log("Form submitted:", formData);
+  //   setSubmitted(true);
+  //   setTimeout(() => {
+  //     setSubmitted(false);
+  //     setFormData({ name: "", email: "", phone: "", address: "", message: "" });
+  //   }, 3000);
+  // };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
