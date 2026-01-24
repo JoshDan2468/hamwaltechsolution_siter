@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Phone,
   Mail,
@@ -21,66 +21,50 @@ export function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
 
+  //   const client = new SMTPClient({
+  //     user: '714c18a4f0eb4c',
+  //     password: '2af0a267661dd0',
+  //     host: 'sandbox.smtp.mailtrap.io',
+  //     ssl: true, // Use SSL for secure connection
+  // });
+
+  async function sendMyEmail() {
+    try {
+      const message = await emailjs.send(
+        "service_4t4b5h7",
+        "__ejs-test-mail-service__",
+        formData,
+        "HO-JV7axuMWHZuAtT",
+      );
+      console.log("Form submitted:", formData);
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          address: "",
+          message: "",
+        });
+      }, 3000);
+
+      console.log("Email sent successfully:", message);
+    } catch (err) {
+      console.error("Failed to send email:", err);
+    } finally {
+      console.error("Failed to send email:");
+      // client.smtp.close(); // Don't forget to close the connection!
+    }
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-
-    // Simulate API call
-    setTimeout(() => {
-      setSubscribed(true);
-      setLoading(false);
-      setEmail("");
-
-      // Reset after 5 seconds
-      setTimeout(() => {
-        setSubscribed(false);
-      }, 5000);
-    }, 1000);
+    sendMyEmail();
   };
-  
-
-  
-
-//   const client = new SMTPClient({
-//     user: '714c18a4f0eb4c',
-//     password: '2af0a267661dd0',
-//     host: 'sandbox.smtp.mailtrap.io',
-//     ssl: true, // Use SSL for secure connection
-// });
-
-async function sendMyEmail() {
-  try {
-      const message = await emailjs.send(
-        "service_9hxr48m",
-        "template_30khyy7",
-        formData,
-         "HO-JV7axuMWHZuAtT"
-      );
-      
-      
-      console.log('Email sent successfully:', message);
-  } catch (err) {
-      console.error('Failed to send email:', err);
-  } finally {
-    console.error('Failed to send email:');
-      // client.smtp.close(); // Don't forget to close the connection!
-  }
-}
-
-
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   // In a real application, this would send data to a backend
-  //   console.log("Form submitted:", formData);
-  //   setSubmitted(true);
-  //   setTimeout(() => {
-  //     setSubmitted(false);
-  //     setFormData({ name: "", email: "", phone: "", address: "", message: "" });
-  //   }, 3000);
-  // };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
