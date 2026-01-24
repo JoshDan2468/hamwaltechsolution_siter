@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Mail, CheckCircle, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
-
-
 export function NewsletterSignup() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
