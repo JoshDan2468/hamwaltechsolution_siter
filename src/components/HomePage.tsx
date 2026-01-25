@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 // import { useState } from "react";
 import { NewsletterSignup } from "./NewsletterSignup";
 import { ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+
 // import type { image } from "framer-motion/client";
 
 const benefits = [
@@ -69,7 +71,14 @@ export function HomePage() {
   // const [changeColor, setChangeColor] = useState(false);
   return (
     <div>
-      {/* Hero Section */}
+      <Helmet>
+        <title>Engineering, Energy & Technology Solutions in Nigeria</title>
+        <meta
+          name='description'
+          content='Hamwal Tech Solution A diversified technology, energy, and engineering company providing integrated solutions across asset integrity, oil & gas, gas solutions, digital technology, and infrastructure development.'
+        />
+      </Helmet>
+      ;{/* Hero Section */}
       <section className='relative min-h-200 sm:min-h-150 flex items-center justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32'>
         <div className='absolute inset-0 z-0'>
           <img
@@ -156,7 +165,6 @@ export function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* Client Logos Section */}
       <section className='py-12 bg-white border-b border-gray-200'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -202,7 +210,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section className='py-20 bg-white'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -266,7 +273,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Key Services Section */}
       <section className='py-20 bg-linear-to-br from-blue-50 to-green-50'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -369,9 +375,7 @@ export function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* Partnership Section */}
-
       <section className='py-12 bg-white border-b border-gray-200 overflow-hidden'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           {/* Title */}
@@ -416,7 +420,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Stats Section */}
       <section className='py-20 bg-linear-to-r from-blue-900 to-green-700 text-white'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -500,7 +503,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       {/* <section className='py-20 bg-white'>
         <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
@@ -525,7 +527,6 @@ export function HomePage() {
           </motion.div>
         </div>
       </section> */}
-
       {/* Newsletter Signup Section */}
       <section className='py-12 sm:py-16 lg:py-20 bg-gray-100'>
         <div className='max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 // import { SMTPClient } from 'emailjs';
 import emailjs from "emailjs-com";
+import { Helmet } from "react-helmet-async";
 
 export function ContactPage() {
   const [formData, setFormData] = useState({
@@ -74,6 +75,13 @@ export function ContactPage() {
 
   return (
     <div className='pt-20'>
+      <Helmet>
+        <title>Contact Hamwal Tech Solution</title>
+        <meta
+          name='description'
+          content='Get in touch with Hamwal Tech Solution Limited for expert consultation and project support, serving clients across Nigeria and international markets through multiple communication channels.'
+        />
+      </Helmet>
       {/* Hero Section */}
       <section className='relative min-h-125 flex items-center justify-center overflow-hidden'>
         <div className='absolute inset-0 z-0'>
