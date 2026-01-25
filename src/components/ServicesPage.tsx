@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+
 // import { image } from "framer-motion/client";
 
 const services = [
@@ -137,7 +139,18 @@ const processSteps = [
 export function ServicesPage() {
   return (
     <div className='pt-20'>
-      {/* Hero Section */}
+      <Helmet>
+        <title>
+          Hamwal Tech Solution Delivers integrated energy, engineering, asset
+          integrity, and digital transformation services to industrial, public
+          sector, and energy clients across Nigeria and Globally.
+        </title>
+        <meta
+          name='description'
+          content='We deliver integrated, end-to-end solutions across energy, engineering, digital technology, infrastructure, and industrial services, supporting sustainable growth for clients in Nigeria and globally.'
+        />
+      </Helmet>
+      ;{/* Hero Section */}
       <section className='relative min-h-125 flex items-center justify-center overflow-hidden'>
         <div className='absolute inset-0 z-0'>
           <img
@@ -175,7 +188,6 @@ export function ServicesPage() {
           </motion.p>
         </div>
       </section>
-
       {/* Services Grid */}
       <section className='py-20 bg-white'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -237,7 +249,6 @@ export function ServicesPage() {
           </div>
         </div>
       </section>
-
       {/* Detailed Energy & Gas Section */}
       <section className='py-20 bg-linear-to-br from-green-50 to-blue-50'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -351,7 +362,6 @@ export function ServicesPage() {
           </div>
         </div>
       </section>
-
       {/* Process Section */}
       <section className='py-20 bg-white'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -408,7 +418,6 @@ export function ServicesPage() {
           </div>
         </div>
       </section>
-
       {/* Benefits Section */}
       <section className='py-20 bg-linear-to-br from-blue-50 to-green-50'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -461,7 +470,6 @@ export function ServicesPage() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className='py-20 bg-linear-to-r from-blue-900 to-green-700 text-white'>
         <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>

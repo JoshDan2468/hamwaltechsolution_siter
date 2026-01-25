@@ -9,6 +9,7 @@ import {
   Target,
   ArrowRight,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const csrFocus = [
   {
@@ -97,6 +98,17 @@ const sdgAlignments = [
 export function CSRPage() {
   return (
     <div className='pt-20'>
+      <Helmet>
+        <title>
+          Hamwal Tech Solution Delivers integrated energy, engineering, asset
+          integrity, and digital transformation services to industrial, public
+          sector, and energy clients across Nigeria and Globally.
+        </title>
+        <meta
+          name='description'
+          content='Hamwal Tech Solution Limited is committed to responsible and ethical operations that promote environmental sustainability, workplace safety, community development, and long-term shared value across Nigeria and globally.'
+        />
+      </Helmet>
       {/* Hero Section */}
       <section className='relative min-h-125 flex items-center justify-center  overflow-hidden '>
         <div className='absolute inset-0 z-0'>

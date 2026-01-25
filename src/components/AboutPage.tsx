@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 // import { image } from "framer-motion/client";
 
@@ -86,6 +87,13 @@ export function AboutPage() {
 
   return (
     <div className='pt-20'>
+      <Helmet>
+        <title>Engineering, Energy & Technology Solutions in Nigeria</title>
+        <meta
+          name='description'
+          content='Founded in 2013, Hamwal Tech Solution Limited is a trusted, technology-driven partner delivering innovative, safe, and sustainable energy, engineering, and digital solutions to clients across Nigeria and globally.'
+        />
+      </Helmet>
       {/* Hero Section */}
       <section className='relative min-h-120 sm:min-h-138 flex items-center justify-center overflow-hidden '>
         <div className='absolute inset-0 z-0 overflow-hidden'>
