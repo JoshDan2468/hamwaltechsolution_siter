@@ -102,6 +102,12 @@ export function Footer() {
                   bustop, Mushin,Lagos, Nigeria. <br />
                 </span>
               </div>
+              <div className='flex items-start gap-2 ml-6'>
+                <span>
+                  Administrative Office: 31, Ademola Street,
+                  Ikoyi,Lagos,Nigeria.
+                </span>
+              </div>
             </div>
           </div>
           {/* Social Media */}
