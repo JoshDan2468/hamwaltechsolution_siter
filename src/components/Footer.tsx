@@ -215,8 +215,8 @@ export function Footer() {
 
         <div className='border-t border-blue-800 mt-8 pt-8 text-center text-gray-400 text-sm'>
           <p>
-            &copy; {new Date().getFullYear()} Hamwal Tech Solution Limited. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} Hamwal Tech Solution. All rights
+            reserved.
           </p>
           <p className='mt-2'>Integrated Solutions for a Sustainable Future</p>
         </div>
