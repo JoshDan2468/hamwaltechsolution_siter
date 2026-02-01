@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Mail, MessageCircle } from "lucide-react";
-import logo from "/nav_icon.png";
+import logo from "/favicon.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 

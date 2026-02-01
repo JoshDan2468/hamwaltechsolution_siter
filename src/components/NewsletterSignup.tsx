@@ -1,27 +1,44 @@
 import { useState } from "react";
 import { Mail, CheckCircle, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { sendWelcomeEmail } from "./service/emailService";
 
 export function NewsletterSignup() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
+  const isValidEmail = (email: string) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-    // Simulate API call
-    setTimeout(() => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!isValidEmail(email)) {
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      // Send welcome email via EmailJS
+      await sendWelcomeEmail({
+        subscriberEmail: email,
+      });
+
       setSubscribed(true);
-      setLoading(false);
       setEmail("");
 
-      // Reset after 5 seconds
+      // Reset success state after 5 seconds
       setTimeout(() => {
         setSubscribed(false);
       }, 5000);
-    }, 1000);
+    } catch (error) {
+      console.error("Newsletter signup failed:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

@@ -9,7 +9,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 // import { SMTPClient } from 'emailjs';
-import emailjs from "emailjs-com";
+import { sendContactEmail } from "./service/contactEmailService";
 import { Helmet } from "react-helmet-async";
 
 export function ContactPage() {
@@ -31,14 +31,10 @@ export function ContactPage() {
 
   async function sendMyEmail() {
     try {
-      const message = await emailjs.send(
-        "service_4t4b5h7",
-        "__ejs-test-mail-service__",
-        formData,
-        "HO-JV7axuMWHZuAtT",
-      );
-      console.log("Form submitted:", formData);
+      await sendContactEmail(formData);
+
       setSubmitted(true);
+
       setTimeout(() => {
         setSubmitted(false);
         setFormData({
@@ -49,13 +45,9 @@ export function ContactPage() {
           message: "",
         });
       }, 3000);
-
-      console.log("Email sent successfully:", message);
     } catch (err) {
       console.error("Failed to send email:", err);
-    } finally {
-      console.error("Failed to send email:");
-      // client.smtp.close(); // Don't forget to close the connection!
+      alert("Failed to send message. Please try again.");
     }
   }
 

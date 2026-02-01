@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "/nav_icon.png";
+import logo from "/favicon.png";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
